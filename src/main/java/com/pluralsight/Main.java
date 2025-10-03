@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args)throws InterruptedException {
         Dice dice = new Dice();
 
-        int roll1 = 0;
+        int roll1;
         int roll2;
 
         int count2 = 0;
@@ -14,8 +14,8 @@ public class Main {
         int count7 = 0;
 
         for (int x = 0; x < 101; x++){
-            roll1 = Dice.roll();
-            roll2 = Dice.roll();Thread.sleep(200);
+            roll1 = dice.roll();
+            roll2 = dice.roll();Thread.sleep(200);
             int sum = roll1 + roll2;
             System.out.printf("Role %d:   %d  -  %d    sum:  %d\n",x,roll1,roll2,sum);
 
